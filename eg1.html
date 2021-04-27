@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Ajax Example</title>
+<script src='js/JRock.js'></script>
+<script>
+function populateDesignations()
+{
+$$$.ajax({
+"url":"servletOne",
+"methodType":"GET",
+"success":function(responseData){
+var designations=JSON.parse(responseData);
+alert(designations);
+var designationComboBox=document.getElementById("designationCode");
+var obj;
+for(var i=0;i<designations.length;i++)
+{
+obj=document.createElement("option");
+obj.value=designations[i].code;
+obj.text=designations[i].title;
+designationComboBox.appendChild(obj);
+}
+},
+"failure":function(){
+alert("Some problem");
+}
+});
+}
+window.addEventListener('load',populateDesignations);
+</script>
+</head>
+<body>
+<h1>Get type request</h1>
+<select id='designationCode'></select>
+<br>
+<br>
+<a href='index.html'>Home</a>
+</body>
+</html>

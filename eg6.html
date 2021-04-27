@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>AJAX Examples</title>
+<script src='js/JRock.js'></script>
+<style>
+.hcjrock_hcgrid_header_division
+{
+overflow-x: hidden;
+overflow-y: hidden;
+width: 300px;
+}
+
+.hcjrock_hcgrid_body_division
+{
+overflow-x: scroll;
+overflow-y: scroll;
+height: 300px;
+width: 317px;
+}
+
+.hcjrock_hcgrid_pagination
+{
+margin-top:10px;
+}
+
+.hcjrock_hcgrid_pagination td
+{
+width: 20px;
+text-align: center;
+}
+
+.hcjrock_hcgrid_pagination a {
+background-color: pink;
+color:black;
+padding: 1px 5px;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.hcjrock_hcgrid_head
+{
+border: 1px groove green'
+border-bottom: 0px;
+border-spacing: 0px;
+border-collapse: collapse;
+background: lightgray;
+width:750px;
+}
+
+.hcjrock_hcgrid_head td
+{
+border-left: 1px groove red;
+border-right: 1px groove red;
+border-top: 1px groove red;
+border-bottom: 0px groove red;
+width: 50px;
+text-align: right;
+}
+
+.hcjrock_hcgrid_head td+td
+{
+width: 100px;
+text-align: left;
+}
+
+.hcjrock_hcgrid_head td+td+td
+{
+width=150px;
+text-align: left;
+}
+
+.hcjrock_hcgrid_head td+td+td+td
+{
+width=150px;
+text-align: left;
+}
+
+.hcjrock_hcgrid_head td+td+td+td+td
+{
+width=150px;
+text-align: left;
+}
+
+.hcjrock_hcgrid_body
+{
+border: 1px groove green'
+border-spacing: 0px;
+border-collapse: collapse;
+width:750px;
+}
+
+.hcjrock_hcgrid_body td
+{
+border: 1px groove red;
+width: 50px;
+text-align: right;
+}
+.hcjrock_hcgrid_body td+td
+{
+width: 100px;
+text-align: left;
+}
+.hcjrock_hcgrid_body td+td+td
+{
+width=150px;
+text-align: left;
+}
+.hcjrock_hcgrid_body td+td+td+td
+{
+width=150px;
+text-align: left;
+}
+.hcjrock_hcgrid_body td+td+td+td+td
+{
+width=150px;
+text-align: left;
+}
+</style>
+<script>
+class Student
+{
+constructor(rollNumber,name,nameOfMother,nameOfFather)
+{
+this.rollNumber=rollNumber;
+this.name=name;
+this.nameOfMother=nameOfMother;
+this.nameOfFather=nameOfFather;
+}
+}
+
+function gridLoader()
+{
+var hcjrock_hcgrid_header_division=document.querySelector('.hcjrock_hcgrid_header_division');
+var hcjrock_hcgrid_body_division=document.querySelector('.hcjrock_hcgrid_body_division');
+hcjrock_hcgrid_body_division.addEventListener('scroll',function(){
+hcjrock_hcgrid_header_division.scrollLeft=hcjrock_hcgrid_body_division.scrollLeft;
+});
+
+var i;
+var students=new Array();
+for(i=0;i<=1000;i++)
+{
+students.push(new Student(i,i+"Name",i+"Mother",i+"Father"));
+}
+$$$.model.grid=new Grid('dataTable','dataTablePagination',students,15);
+}
+$$$.onDocumentLoaded(gridLoader);
+</script>
+</head>
+<body>
+<div class='somestyle'>
+<div class='hcjrock_hcgrid_header_division'>
+<table class='hcjrock_hcgrid_head'>
+<tr>
+<td>S.No.</td>
+<td>Roll Number.</td>
+<td>Name.</td>
+<td>Father Name.</td>
+<td>Mother Name.</td>
+</tr>
+</table>
+</div>
+<div class='hcjrock_hcgrid_body_division'>
+<table class='hcjrock_hcgrid_body' id='dataTable'>
+</table>
+</div>
+
+<div class='hcjrock_hcgrid_pagination_division'>
+<table class='hcjrock_hcgrid_pagination' id='dataTablePagination'>
+</table>
+</div>
+</div>
+</body>
+</html>
