@@ -543,6 +543,7 @@ Gender</td>
 </html>
 ```
 **Output**
+
 ![form-validation](https://user-images.githubusercontent.com/55887060/116878354-3897bf80-abed-11eb-8309-1c9257b44efa.PNG)
 ______________________________________________________________________________________________________________________________
 
@@ -590,5 +591,7 @@ window.addEventListener('load',populateDesignations);
 </body>
 </html>
 ```
+**Output**
+
 ![combo-box](https://user-images.githubusercontent.com/55887060/116878880-f28f2b80-abed-11eb-885e-b5af5601680b.png)
 ____________________________________________________________________________________________________________________________
