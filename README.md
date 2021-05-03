@@ -299,7 +299,296 @@ $$$.onDocumentLoaded(gridLoader);
 </body>
 </html>
 ```
-![grid_view](https://user-images.githubusercontent.com/55887060/116877985-aee7f200-abec-11eb-8c47-da6ed9ac3ed6.PNG)
+**Output**
+![grid_view](https://user-images.githubusercontent.com/55887060/116878640-a5ab5500-abed-11eb-901e-ddeff6a24803.PNG)
 __________________________________________________________________________________________________________________________
 
-###
+### Accordian-Pane
+```
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<style>
+.div {
+width: 97%;
+
+border: 5px solid gray;
+margin: 0;
+}
+.heading
+{
+color: white;
+background-color: #222124;
+}
+
+</style>
+<title>AJAX Examples</title>
+<script src='js/HCJRock.js'></script>
+</head>
+<body>
+<div accordian="true">
+<h3 class='heading'>Heading 1</h3>
+<div id='abcdef' class='div'>
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+</div>
+
+<h3 class='heading'>Heading 2</h3>
+<div class='div'>
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 
+</div>
+
+<h3 class='heading'>Heading 3</h3>
+<div class='div'>
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+</div>
+</div>
+
+
+
+
+<div accordian="true">
+<h3 class='heading'>Heading 1000</h3>
+<div id='abcdef' class='div'>
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1 Content 1
+</div>
+
+<h3 class='heading'>Heading 2000</h3>
+<div class='div'>
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2
+Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 Content2 
+</div>
+
+<h3 class='heading'>Heading 3000</h3>
+<div class='div'>
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3 Content 3
+</div>
+</div>
+
+
+
+</body>
+</html>
+```
+**Output**
+![accordian-Pane](https://user-images.githubusercontent.com/55887060/116878205-05553080-abed-11eb-8bf1-f2b9e607ae5f.PNG)
+_____________________________________________________________________________________________________________
+
+### Form Validation
+```
+<!doctype html>
+<html lang='en'>
+<head>
+<title>Ajax Example</title>
+<script src='js/JRock.js'></script>
+<script>
+function doSomething()
+{
+return $$$.validateForm("someForm").isValid({
+"nm":{
+"required":true,
+"maxLength":20,
+"errorPane":"nmErrorSection",
+"errors":{
+"required":"Name required",
+"maxLength":"Name cannot exceed 20 characters"
+}
+},
+"ad":{
+"required":true,
+"errorPane":"adErrorSection",
+"errors":{
+"required":"Address required"
+}
+},
+"ct":{
+"invalid":-1,
+"errorPane":"ctErrorSection",
+"errors":{
+"invalid":"Select city"
+}
+},
+"gender":{
+"required":true,
+"errorPane":"genderErrorSection",
+"errors":{
+"required":"select gender"
+}
+},
+"agree":{
+"requiredState":true,
+"displayAlert":true,
+"errors":{
+"requiredState":"Select I agree checkbox"
+}
+}
+});
+}
+</script>
+</head>
+<body>
+<h1>HCJRock validations</h1>
+<form id='someForm' onsubmit='return doSomething()'>
+<table>
+<tbody>
+<tr>
+<td>Name</td> 
+<td><input type='text' name='nm' id='nm'><span id='nmErrorSection' style='color:red'></span></td> 
+</tr>
+<tr>
+<td>Address</td> 
+<td><textarea id='ad' name='ad'></textarea><span id='adErrorSection' style='color:red'></span></td> 
+</tr>
+<tr>
+<td>Select city</td> 
+<td>
+<select id='ct' name='ct'>
+<option value='-1'>select city</option>
+<option value='1'>Ujjain</option>
+<option value='2'>Dewas</option>
+<option value='3'>Indore</option>
+</select>
+<span id='ctErrorSection' style='color:red'></span><br>
+</td> 
+</tr>
+<tr>
+<td>
+Gender</td> 
+<td> Male <input type='radio' name='gender' id='ml' value='M'>&nbsp;&nbsp;&nbsp;Female <input type='radio' name='gender' id='fe' value='F'> 
+<span id='genderErrorSection' style='color:red'></span></td> 
+</tr>
+<tr>
+<td> <input type='checkbox' name='agree' id='ag' value='y'></td> 
+<td>  I agree?</td> 
+</tr>
+<tr>
+<br>
+<td> <button type='submit'>Registor</button></td> 
+</tr>
+</tbody>
+</table>
+</form>
+</body>
+</html>
+```
+**Output**
+![form-validation](https://user-images.githubusercontent.com/55887060/116878354-3897bf80-abed-11eb-8309-1c9257b44efa.PNG)
+______________________________________________________________________________________________________________________________
+
+### AJAX Call & Filling Combo Box
+```
+<!Doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Ajax Example</title>
+<script src='js/HCJRock.js'></script>
+<script>
+function populateDesignations()
+{
+$$$.ajax({
+"url":"servletOne",
+"methodType":"GET",
+"success":function(responseData){
+var designations=JSON.parse(responseData);
+alert(designations);
+var designationComboBox=document.getElementById("designationCode");
+var obj;
+for(var i=0;i<designations.length;i++)
+{
+obj=document.createElement("option");
+obj.value=designations[i].code;
+obj.text=designations[i].title;
+designationComboBox.appendChild(obj);
+}
+},
+"failure":function(){
+alert("Some problem");
+}
+});
+}
+window.addEventListener('load',populateDesignations);
+</script>
+</head>
+<body>
+<h1>Get type request</h1>
+<select id='designationCode'></select>
+<br>
+<br>
+<a href='index.html'>Home</a>
+</body>
+</html>
+```
+![combo-box](https://user-images.githubusercontent.com/55887060/116878880-f28f2b80-abed-11eb-885e-b5af5601680b.png)
+____________________________________________________________________________________________________________________________
