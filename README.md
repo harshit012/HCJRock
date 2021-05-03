@@ -7,3 +7,4 @@ This a light-weight JavaScript framework which makes a web developer's life easi
 * Accordian Pane
 * Form Validation
 * Filling Combo Box
+
